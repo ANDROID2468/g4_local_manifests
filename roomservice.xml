@@ -16,6 +16,5 @@
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="c_github" revision="cm-14.1" />
   <project name="Suicide-Squirrel/vendor_rom" path="vendor/cm" remote="github" revision="cm" />
   <remove-project groups="pdk-fs" name="LineageOS/android_packages_apps_Camera2" path="packages/apps/Camera2" />
-  <project name="LineageOS/Suicide-Squirrel/Titan-Kernel-LG-G4" path="kernel/lge/msm8992" remote="github" revision="aosp" />
   <project name="LineageOS/android_device_lge_common" path="device/lge/common" remote="github" />
 </manifest>
