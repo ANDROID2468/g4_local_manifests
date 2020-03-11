@@ -2,7 +2,6 @@
 <manifest>
   <remote fetch="https://github.com/" name="c_github" />
   <remove-project name="LineageOS/android_vendor_cm" path="vendor/cm" />
-  <project name="LineageOS/android_vendor_cm" path="vendor/lineage" remote="c_github" revision="cm-14.1" />
   <project name="Suicide-Squirrel/proprietary_vendor_lge" path="vendor/lge" remote="c_github" revision="cm-14.1" />
   <project name="Suicide-Squirrel/android_device_lge_h811" path="device/lge/h811" remote="c_github" revision="cm-14.1" />
   <project name="Suicide-Squirrel/Titan-Kernel-LG-G4" path="kernel/lge/msm8992" remote="c_github" revision="los-14.1" />
