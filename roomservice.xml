@@ -1,19 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://github.com/" name="c_github" />
-  <remove-project name="LineageOS/android_vendor_cm" path="vendor/cm" />
-  <project name="Suicide-Squirrel/proprietary_vendor_lge" path="vendor/lge" remote="c_github" revision="cm-14.1" />
-  <project name="Suicide-Squirrel/android_device_lge_h811" path="device/lge/h811" remote="c_github" revision="cm-14.1" />
-  <project name="Suicide-Squirrel/Titan-Kernel-LG-G4" path="kernel/lge/msm8992" remote="c_github" revision="los-14.1" />
-  <project name="ANDROID2468/android_device_lge_vs986" path="device/lge/vs986_usu" remote="c_github" revision="cm-14.1" />
-  <project name="Suicide-Squirrel/android_device_lge_h815" path="device/lge/h815" remote="c_github" revision="cm-14.1" />
-  <project name="Suicide-Squirrel/android_device_lge_g4-common" path="device/lge/g4-common" remote="c_github" revision="cm-14.1" />
-  <project name="Suicide-Squirrel/device_qcom_common" path="device/qcom/common" remote="c_github" revision="nougat-mr2" />
-  <project name="LineageOS/android_hardware_sony_thermanager" path="hardware/sony/thermanager" remote="c_github" revision="cm-14.1" />
-  <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="c_github" revision="cm-14.1" />
-  <project name="LineageOS/android_packages_apps_FlipFlap" path="packages/apps/FlipFlap" remote="c_github" revision="cm-14.1" />
-  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="c_github" revision="cm-14.1" />
-  <project name="Suicide-Squirrel/vendor_rom" path="vendor/cm" remote="github" revision="cm" />
-  <remove-project groups="pdk-fs" name="LineageOS/android_packages_apps_Camera2" path="packages/apps/Camera2" />
-  <project name="LineageOS/android_device_lge_common" path="device/lge/common" remote="github" />
+
+  <remote  name="lineage"
+           fetch="https://github.com/lineageOS/" />
+
+  <remote  name="aoscp"
+           fetch="https://github.com/CypherOS/"
+           revision="poundcake-release" />
+  
+  <remote  name="suicide"
+           fetch="ssh://git@github.com/Suicide-Squirrel/"
+           revision="lineage-16.0" />
+  
+  <remote  name="ANDROID2468"
+           fetch="ssh://git@github.com/ANDROID2468/"
+           revision="potato-9.0" />
+
+ 
+  <!-- REMOVALS (must be at TOP)
+  #####################################################-->
+  <remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" />
+  <remove-project path="hardware/qcom/power" name="LineageOS/android_hardware_qcom_power" groups="pdk" />
+
+  <!-- KERNEL
+  #####################################################-->
+  <project name="Titan-Kernel-LG-G4" path="kernel/lge/msm8992" remote="suicide" revision="android-9.0_sfx" />
+
+  <!-- DEVICE TREES
+  #####################################################-->
+  <project name="android_device_lge_g4-common" path="device/lge/g4-common" remote="suicide" />
+  <project name="android_device_lge_g4" path="device/lge/g4" remote="ANDROID2468" />
+
+  <!-- LOS STUFF
+  #####################################################-->
+  <project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" remote="lineage" />
+  <project path="system/qcom" name="android_system_qcom" groups="qcom" remote="lineage"/>
+
+  <!-- Broadcom BT voice FIX
+  #####################################################-->
+  <!--project name="android_hardware_broadcom_libbt" path="hardware/broadcom/libbt" remote="suicide" />-->
+
+  <!-- power HAL patch
+  #####################################################-->
+  <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="suicide" revision="lineage-16.0_synced" />
+
+  <!-- MISC
+  #####################################################-->
+  <project path="vendor/lge" name="proprietary_vendor_lge" remote="suicide" revision="android-9.0" />
+  <!-- backup solution without google deps -->
+  <project path="packages/apps/Backup" name="stevesoltys/backup" remote="github" revision="master" />
+  <!-- FDroid -->
+  <project name="android_vendor_fdroid" path="vendor/fdroid" remote="suicide" revision="master" />
+
 </manifest>
