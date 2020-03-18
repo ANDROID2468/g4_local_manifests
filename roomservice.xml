@@ -13,14 +13,12 @@
            revision="lineage-16.0" />
   
   <remote  name="ANDROID2468"
-           fetch="ssh://git@github.com/ANDROID2468/"
-           revision="potato-9.0" />
+           fetch="https://github.com/ANDROID2468/" />
 
  
   <!-- REMOVALS (must be at TOP)
   #####################################################-->
-  <remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" />
-  <remove-project path="hardware/qcom/power" name="PotatoProject/hardware_qcom_power" groups="pdk" />
+  <remove-project path="hardware/qcom/power" name="hardware_qcom_power" groups="pdk" />
 
   <!-- KERNEL
   #####################################################-->
@@ -29,7 +27,7 @@
   <!-- DEVICE TREES
   #####################################################-->
   <project name="android_device_lge_g4-common" path="device/lge/g4-common" remote="suicide" />
-  <project name="android_device_lge_g4" path="device/lge/g4" remote="ANDROID2468" />
+  <project name="android_device_lge_g4" path="device/lge/g4" remote="ANDROID2468" revision="potato-9.0" />
 
   <!-- LOS STUFF
   #####################################################-->
