@@ -9,7 +9,7 @@
            revision="poundcake-release" />
   
   <remote  name="suicide"
-           fetch="ssh://git@github.com/Suicide-Squirrel/"
+           fetch="https://github.com/Suicide-Squirrel/"
            revision="lineage-16.0" />
   
   <remote  name="ANDROID2468"
