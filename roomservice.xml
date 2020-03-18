@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="lineage"
+  <remote  name="lineage2"
            fetch="https://github.com/lineageOS/" />
 
   <remote  name="aoscp"
@@ -20,7 +20,7 @@
   <!-- REMOVALS (must be at TOP)
   #####################################################-->
   <remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" />
-  <remove-project path="hardware/qcom/power" name="LineageOS/android_hardware_qcom_power" groups="pdk" />
+  <remove-project path="hardware/qcom/power" name="PotatoProject/hardware_qcom_power" groups="pdk" />
 
   <!-- KERNEL
   #####################################################-->
@@ -33,8 +33,8 @@
 
   <!-- LOS STUFF
   #####################################################-->
-  <project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" remote="lineage" />
-  <project path="system/qcom" name="android_system_qcom" groups="qcom" remote="lineage"/>
+  <project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" remote="lineage2" />
+  <project path="system/qcom" name="android_system_qcom" groups="qcom" remote="lineage2"/>
 
   <!-- Broadcom BT voice FIX
   #####################################################-->
