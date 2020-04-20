@@ -20,7 +20,7 @@
   #####################################################-->
   <!--remove-project path="hardware/qcom/power" name="hardware_qcom_power" groups="pdk" /> -->
   <remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" />
-
+  <remove-project path="external/flutter" name="flutter/flutter" remote="github" />
   <!-- KERNEL
   #####################################################-->
   <project name="Titan-Kernel-LG-G4" path="kernel/lge/msm8992" remote="suicide" revision="android-9.0_sfx" />
@@ -51,5 +51,7 @@
   <project path="packages/apps/Backup" name="stevesoltys/backup" remote="github" revision="master" />
   <!-- FDroid -->
   <project name="android_vendor_fdroid" path="vendor/fdroid" remote="suicide" revision="master" />
+  <!--  flutter fix -->
+  <project name="flutter/flutter" path="external/flutter" revision="v1.9.1-hotfixes" remote="github" />
 
 </manifest>
