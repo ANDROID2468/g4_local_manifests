@@ -7,18 +7,19 @@
   <remote  name="aoscp"
            fetch="https://github.com/CypherOS/"
            revision="poundcake-release" />
-  
+
   <remote  name="suicide"
            fetch="https://github.com/Suicide-Squirrel/"
            revision="lineage-16.0" />
-  
+
   <remote  name="ANDROID2468"
            fetch="https://github.com/ANDROID2468/" />
 
- 
+
   <!-- REMOVALS (must be at TOP)
   #####################################################-->
   <remove-project path="hardware/qcom/power" name="hardware_qcom_power" groups="pdk" />
+  <remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" />
 
   <!-- KERNEL
   #####################################################-->
@@ -31,8 +32,9 @@
 
   <!-- LOS STUFF
   #####################################################-->
-  <project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" remote="lineage2" />
-  <project path="system/qcom" name="android_system_qcom" groups="qcom" remote="lineage2"/>
+  <project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" remote="lineage2" revision="lineage-16.0" />
+  <project path="system/qcom/" name="PotatoProject/system_qcom" groups="qcom" remote="github" revision="baked-release"/>
+
 
   <!-- Broadcom BT voice FIX
   #####################################################-->
@@ -50,4 +52,6 @@
   <!-- FDroid -->
   <project name="android_vendor_fdroid" path="vendor/fdroid" remote="suicide" revision="master" />
 
+  <!-- Policies -->
+  <project name="LineageOS/android_device_qcom_sepolicy" path="device/qcom 		/sepolicy" remote="github" revision="lineage-16.0" />
 </manifest>
