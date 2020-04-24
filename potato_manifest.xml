@@ -51,8 +51,8 @@
   <project path="vendor/lge" name="proprietary_vendor_lge" remote="suicide" revision="android-9.0" />
   <!-- backup solution without google deps -->
   <project path="packages/apps/Backup" name="stevesoltys/backup" remote="github" revision="master" />
-  <!-- microG and Fdroid -->
-  <project name="android_vendor_microg" path="vendor/microg" remote="ANDROID2468" revision="master" />
+  <!-- Fdroid -->
+  <project name="android_vendor_fdroid" path="vendor/fdroid" remote="suicide" revision="master" />
   <!-- proprietary apps -->
   <project name="ANDROID24681/proprietary_vendor_apps" path="vendor/apps" remote="gitlab" revision="master" />
   <!--  flutter fix -->
