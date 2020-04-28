@@ -18,8 +18,8 @@
   <project name="ANDROID2468/android_device_lge_vs986" path="device/lge/vs986_usu" remote="github" revision="cm-14.1" />-->
 
   <!-- LOS STUFF -->
-  <project name="LineageOS/android_hardware_sony_thermanager" path="hardware/sony/thermanager" remote="github" />
-  <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" />
+  <project name="LineageOS/android_hardware_sony_thermanager" path="hardware/sony/thermanager" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" revision="cm-14.1" />
   <!-- <project name="LineageOS/android_packages_apps_FlipFlap" path="packages/apps/FlipFlap" remote="github" /> --> 
   <!-- <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" /> -->
 
