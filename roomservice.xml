@@ -4,13 +4,12 @@
   <remove-project path="packages/apps/Camera2" name="LineageOS/android_packages_apps_Camera2" groups="pdk-fs" />
 
   <!-- KERNEL -->
-  <!--project name="LineageOS/android_kernel_lge_msm8992" path="kernel/lge/msm8992" remote="github" />-->
-  <project name="Suicide-Squirrel/Titan-Kernel-LG-G4" path="kernel/lge/msm8992" remote="github" revision="android-7.1" />
-
+  <project name="ANDROID2468/Titan-Kernel-LG-G4" path="kernel/lge/msm8992" remote="github" revision="halium-7.1" />
+  
   <!-- GENERIC -->
-  <project name="ANDROID2468/proprietary_vendor_lge" path="vendor/lge" remote="github" revision="cm-14.1" />
+  <project name="ANDROID2468/proprietary_vendor_lge" path="vendor/lge" remote="github" revision="halium-7.1" />
   <project name="Suicide-Squirrel/device_qcom_common" path="device/qcom/common" remote="github" revision="nougat-mr2" />
-  <project name="Suicide-Squirrel/android_device_lge_common" path="device/lge/common" remote="github" revision="cm-14.1 />
+  <project name="Suicide-Squirrel/android_device_lge_common" path="device/lge/common" remote="github" revision="cm-14.1" />
 
   <!-- DEVICE TREES -->
   <project name="Suicide-Squirrel/android_device_lge_g4-common" path="device/lge/g4-common" remote="github" revision="cm-14.1" />
