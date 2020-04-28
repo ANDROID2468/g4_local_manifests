@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <!-- REMOVALS (must be at TOP) -->
-  <remove-project path="packages/apps/Camera2" name="LineageOS/android_packages_apps_Camera2" groups="pdk-fs" />
 
   <!-- KERNEL -->
   <project name="ANDROID2468/Titan-Kernel-LG-G4" path="kernel/lge/msm8992" remote="github" revision="halium-7.1" />
