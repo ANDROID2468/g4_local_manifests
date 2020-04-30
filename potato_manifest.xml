@@ -54,7 +54,7 @@
   <!-- Fdroid -->
   <project name="android_vendor_fdroid" path="vendor/fdroid" remote="suicide" revision="master" />
   <!-- proprietary apps -->
-  <project name="ANDROID24681/proprietary_vendor_apps" path="vendor/apps" remote="gitlab" revision="master" />
+  <project name="ANDROID2468/proprietary_vendor_apps" path="vendor/apps" remote="gitlab" revision="master" />
   <!--  flutter fix -->
   <project name="flutter/flutter" path="external/flutter" revision="v1.9.1-hotfixes" remote="github" />
   <!-- build script -->
